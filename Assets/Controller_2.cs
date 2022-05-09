@@ -14,12 +14,14 @@ public class Controller_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftArrow) == true)
+        if(Input.GetKey("a"))
+        //if(Input.GetKey(KeyCode.LeftArrow) == true)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
 
-        if(Input.GetKey(KeyCode.RightArrow) == true)
+        if(Input.GetKey("d"))
+        //if(Input.GetKey(KeyCode.RightArrow) == true)
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         }   

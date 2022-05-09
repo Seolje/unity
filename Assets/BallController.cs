@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {   
     private Rigidbody ballRd;
-    public float speed = 200.0f;
+    public float speed = 500.0f;
     Vector3 startPos;
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class BallController : MonoBehaviour
         ballRd = GetComponent<Rigidbody> ();
 
         startPos = new Vector3(0,0.5f,0);
-        ballRd.AddForce(-speed, 0f, speed*0.7f);  
+        ballRd.AddForce(-speed, 0f, speed*0.9f);  
     }
 
     // Update is called once per frame
